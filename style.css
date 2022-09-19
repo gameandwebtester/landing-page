@@ -1,7 +1,18 @@
 body {
+    margin: 0;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+}
+
+.info-image {
+    width: 300px;
+}
+
+.logo {
+    font-size: 16px;
+    color: #f9faf8;
+    align-self: center;
 }
 
 img {
@@ -9,29 +20,48 @@ img {
     width: 100px;
 }
 
+ ul li {
+    list-style-type: none;
+    font-size: 12px;
+}
+
+ul {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+    gap: 22px;
+}
+
+a:link {
+    text-decoration: none;
+    color: #e5e7eb;
+}
+
+a:visited {
+    color: #e5e7eb;
+}
+
 .header {
+    height: 50px;
     color: aliceblue;
     background-color: #1f2937;
     display: flex;
-    justify-content: space-between;
+    padding: 0 64px;
 }
 
 .upper-content {
-    height: 200px;
+    flex: 1 1 auto;
     display: flex;
-    justify-content: center;
-    gap: 24px;
     color: aliceblue;
     background-color: #1f2937;
+    padding: 0 64px;
 }
 
 .middle-content {
-    min-height: 200px;
+    flex: 1 1 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-
 }
 
 .container {
@@ -39,26 +69,72 @@ img {
     gap: 12px;
 }
 
+.heading,
+.info{
+    margin-right: 25px;
+}
+
+.text {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.quote {
+    font-style: italic;
+}
+
+.person {
+    font-weight: 800;
+    align-self: flex-end;
+}
+
 
 .lower-content {
-    min-height: 200px;
+    flex: 1 1 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: #e5e7eb;
+    padding: 0 64px;
+}
+
+.sign-up {
+    margin-right: 100px;
+}
+
+.container2 {
+    margin-right: 100px;
+    margin-left: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.s-button {
+    width: 80px;
+    border: 2px solid white;
+}
+
+.s-button,
+.container2 {
+    background-color: #3882f6;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
 }
 
 .sign-up-box {
-    background-color: aqua;
+    flex: 1 1 auto;
+    background-color: rgb(255, 255, 255);
     display: flex;
-    align-content: center;
+    flex-direction: column;
     justify-content: center;
 }
 
 .footer {
+    flex: 0 0 50px;
     margin-top: auto;
     display: flex;
+    align-content: center;
     justify-content: center;
     color: aliceblue;
     background-color: #1f2937;
